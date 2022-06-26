@@ -7,9 +7,10 @@ using WFA250622_G5.Entities.Abstract;
 
 namespace WFA250622_G5
 {
-    internal class Reservation : BaseEntities
+    public class Reservation : BaseEntities
     {
         public Hotel Hotel { get; set; }
+        public Customer Customer { get; set; }
 
         private DateTime _reservationDate = DateTime.Now;
 
@@ -19,7 +20,6 @@ namespace WFA250622_G5
             set { _reservationDate = value; }
         }
 
-        public Customer Customer { get; set; }
 
 
     }
